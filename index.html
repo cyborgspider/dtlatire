@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>FlatHost - Responsive Hosting Template</title>
+<title>Downtown Tire And Wheel - Serving the Downtown Los Angeles Area</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -12,11 +12,6 @@
 <!--============== ICON FONT FONT-AWESOME=================-->
 
 <link href="css/font-awesome.css" rel="stylesheet">
-
-<!--==============MAIN CSS FOR HOSTING PAGE=================-->
-
-<link href="css/hosting.css" rel="stylesheet" media="all">
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -36,75 +31,74 @@
   $(window).load(function() {
      $('.flexslider').flexslider({
         animation: "slide",
-		useCSS: Modernizr.touch
+		    useCSS: Modernizr.touch
       });
   });
 </script>
 
 <!--==============CONTACT FORM=================-->
 <script src="js/contact_form.js"></script>
+<link href="css/dtla-tire.css" rel="stylesheet" media="all">
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 
 <!--==============Logo & Menu Bar=================-->
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#"> <img src="images/flathost-logo.png" alt="logo"></a> </div>
-    
+      <a class="navbar-brand" href="#"> <img src="images/dtla-logo.png" alt="logo" height="52" width="233"></a> </div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#home">HOME</a></li>
-        <li class="hidden-sm"><a href="#features">FEATURES</a></li>
-        <li class="hidden-sm"><a href="#testimonials">PARTNERS</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">BLOG <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog List</a></li>
-            <li><a href="blog-post.html">Single Blog page</a></li>
-          </ul>
-        </li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#about-us">ABOUT US</a></li>
+        <li><a href="#brands">BRANDS</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#" role="button" data-toggle="modal" data-target="#Login">Login</a></li>
-        <li><a href="whmcs/register.php" role="button" class="btn btn-success">Sign Up</a></li>
       </ul>
       </li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
-    
+    <!-- /.navbar-collapse -->
+
   </div>
 </nav>
 
 <!--==============HEADER =================-->
-<div class="jumbotron masthead"> 
-  
+<div class="topheader">
+  <div class="container">
+    <h2><em>Easy Financing.</em> No Credit Needed.</h2>
+  </div>
+</div>
+<div class="jumbotron masthead">
+
   <!--==============Hero Unit=================-->
   <div class="container">
     <div class="flexslider">
       <ul class="slides">
         <li>
           <div class="hero-unit">
-            <h1>One page Hosting Solution</h1>
-            <h3>Flathost is a bootstrap based responsive minimal, flat and afforable hosting template with easy customization and great support</h3>
-            <div class="slider-actions text-center"> <a href="#" class="btn btn-success btn-lg">Explore Features </a> <a href="#" class="btn btn-primary btn-lg">Plans and Pricing </a> </div>
+            <h1>Downtown Tire and Wheel</h1>
+            <h3>Since 2010, serving the Downtown community with honest pricing and excellent customer service</h3>
+            <div class="slider-actions text-center"> <a href="#contact" class="btn btn-success btn-lg">Find Us Now </a> <a href="#services" class="btn btn-primary btn-lg">Our Services</a> </div>
           </div>
         </li>
         <li>
           <div class="slide2">
-            <p><img src="images/server1.png" alt="server" class="img-responsive center-block"></p>
-            <h1>Dedicated and VIP Hosting</h1>
+            <p><img src="images/slide-tire.png" alt="server" class="img-responsive center-block"></p>
+            <h1>Honest Pricing on all Brands</h1>
+            <h3>We'll install the best tire that matches YOUR budget.</h3>
           </div>
         </li>
         <li>
           <div class="slide3">
-            <p class="pull-left"><img src="images/server2.png" alt="server" class="img-responsive"></p>
-            <h1>Managed Hosting</h1>
-            <h3>Flathost is a bootstrap based responsive minimal, flat and afforable hosting template with easy customization and great support </h3>
+            <p class="pull-left"><img src="images/slide-stack.png" alt="server" class="img-responsive"></p>
+            <h1>Dedicated Customer Service</h1>
+            <h3>No bull, no upselling, no gimmicks. We'll treat you right, no questions asked.</h3>
           </div>
         </li>
       </ul>
@@ -113,40 +107,47 @@
 </div>
 
 <!--==============Content Area=================-->
+<div class="instagram-gallery" id="gallery">
+  <div class="container">
+    <h1>Gallery</h1>
+    <h3>Check out our Instagram</h3>
+    <div id="instafeed">
 
-<div class="container"> 
+    </div>
+  </div>
+</div>
   <!--============== Main Features ==============-->
-  
-  <div class="row mainFeatures" id="features">
+<div class="container">
+  <div class="row mainFeatures" id="about-us">
     <div class="col-sm-6 col-md-4">
-      <div class="img-thumbnail"> <img src="images/secure_img.png" width="85" height="88" alt="secure">
+      <div class="img-thumbnail"> <img src="images/support_img.png" width="85" height="88" alt="secure">
         <div class="caption">
-          <h4>Secure & Reliable</h4>
-          <p>Flathost servers are having high physical security and power redundancy Your data will be secure with us.</p>
+          <h4>Customer Support</h4>
+          <p>We promise to take the time to answer all your questions and handle your car as if it was our own. In order to keep our pricing as competitive as possible, please <a href='tel:213 490 9430'>call the shop for our lowest prices</a>.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
-      <div class="img-thumbnail"> <img src="images/fast_img.png" width="85" height="88" alt="secure">
+      <div class="img-thumbnail"> <img src="images/cpanel_icon.png" height="88" alt="Latest Tech">
         <div class="caption">
-          <h4>Super Fast</h4>
-          <p>With our ultra mordern servers and optical cables, your data will be transfered to end user in milliseconds.</p>
+          <h4>Latest Tech</h4>
+          <p>We use a touchless tire mounting machine to ensure your wheels aren't damaged. Our cutting-edge road force tire balancer ensures an accurate balance to reduce vibration at high speeds.</p>
         </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-0">
-      <div class="img-thumbnail"> <img src="images/support_img.png" width="85" height="88" alt="secure">
+      <div class="img-thumbnail"> <img src="images/secure_img.png" width="85" height="88" alt="secure">
         <div class="caption">
-          <h4>Customer Support</h4>
-          <p>We have a dedicated team of support for sales and support to help you in anytime. You can also chat with us.</p>
+          <h4>Services</h4>
+          <p>We sell new and used tires. Ask us about our affordable wheel and tire packages. Got some bumps and dings? We repair tires and wheels.</p>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!--============== Other Features ==============-->
-  
-  <div class="row PageHead">
+
+  <!-- <div class="row PageHead">
     <div class="col-md-12">
       <h1>More Features</h1>
       <h3>You will get lot of features with flathost</h3>
@@ -181,11 +182,11 @@
       <h4>Latest PHP &amp; MySQL</h4>
       <p>Our network runs the latest stable and secure versions of PHP & MySQL. We also implement strict security and firewall rules protecting your website from unwanted visitors 24/7.</p>
     </div>
-  </div>
-  
+  </div> -->
+
   <!--============== Features Layout ==============-->
-  
-  <div class="row FeatLayout">
+
+  <!--<div class="row FeatLayout">
     <div class="col-md-5 Featimg"> <img src="images/features_img.png" alt="feature" class="img-responsive center-block"></div>
     <div class="col-md-7">
       <h1>Features Layout</h1>
@@ -200,10 +201,10 @@
         <li>Web Secutity</li>
       </ul>
     </div>
-  </div>
-  
+  </div> -->
+
   <!--============== Testimonials ==============-->
-  <div class="row PageHead" id="testimonials">
+  <!--<div class="row PageHead" id="testimonials">
     <div class="col-md-12">
       <h1>Testimonials</h1>
       <h3>Kind words from our valuable customers</h3>
@@ -234,14 +235,32 @@
         </div>
       </div>
     </div>
-  </div>
-  
+  </div>-->
+</div>
   <!--============== Partners List ==============-->
-  
-  <div class="row PartnersList"> <img src="images/logo1.jpg" alt="logo"> <img src="images/logo2.jpg" alt="logo"> <img src="images/logo3.jpg" alt="logo"> <img src="images/logo4.jpg" alt="logo"> <img src="images/logo5.jpg" alt="logo"> </div>
-  
+<div class="brands">
+  <div class="container">
+    <div class="row PartnersList">
+      <h1>Brands We Carry</h1>
+      <h3>Just a sample of the quality brands we provide.</h3>
+      <img src="images/brands/2crave.png" alt="logo">
+      <img src="images/brands/bigbang.png" alt="logo">
+      <img src="images/brands/blaquediamond.png" alt="logo">
+      <img src="images/brands/diablo.png" alt="logo">
+      <img src="images/brands/dub.png" alt="logo">
+      <img src="images/brands/fuel.png" alt="logo">
+      <img src="images/brands/gianelle.png" alt="logo">
+      <img src="images/brands/heavyhitters.png" alt="logo">
+      <img src="images/brands/kokokuture.png" alt="logo">
+      <img src="images/brands/kokosolid.png" alt="logo">
+      <img src="images/brands/niche.png" alt="logo">
+      <img src="images/brands/sporza.png" alt="logo">
+    </div>
+  </div>
+</div>
+
   <!--============== Pricing ==============-->
-  <div class="row PageHead" id="pricing">
+  <!-- <div class="row PageHead" id="pricing">
     <div class="col-md-12">
       <h1>Plans & Pricing</h1>
       <h3>Tailored plans and pricing suits your needs</h3>
@@ -316,11 +335,11 @@
       </div>
       <p> <a href="#" role="button" class="btn btn-success btn-lg">Sign Up </a> </p>
     </div>
-  </div>
-  
+  </div> -->
+
   <!--============== Compare Plans ==============-->
-  
-  <div class="row PageHead">
+
+  <!-- <div class="row PageHead">
     <div class="col-md-12">
       <h1>Compare Plans</h1>
       <h3>Another Plans page with comparison table</h3>
@@ -439,53 +458,11 @@
         </ul>
       </div>
       <p> <a href="#" role="button" class="btn btn-success btn-lg">Sign Up </a> </p>
-    </div>
+    </div>-->
   </div>
 </div>
-<!--Container Closed--> 
+<!--Container Closed-->
 
-<!--============== Domain Search ==============-->
-
-<div class="domain">
-  <div class="container">
-    <div class="row PageHead">
-      <div class="col-md-12">
-        <h1>Search Domain</h1>
-        <h3>Enter the domain name to register or transfer</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <form action="https://yourwebsite.com/whmcs/domainchecker.php" method="post">
-          <input type="hidden" name="direct" value="true" />
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <div class="input-group">
-                <input class="form-control" type="text" name="domain" size="20" placeholder="your domain name" />
-                <span class="input-group-btn">
-                <select class="btn btn-default" name="ext">
-                  <option selected>.com</option>
-                  <option>.net</option>
-                  <option>.org</option>
-                  <option>.biz</option>
-                  <option>.com.au</option>
-                  <option>.net.au</option>
-                  <option>.info</option>
-                  <option>.asia</option>
-                  <option>.co.nz</option>
-                  <option>.org.au</option>
-                </select>
-                </span> </div>
-            </div>
-          </div>
-          <div class="submitbtn">
-            <input type="submit" class="btn btn-success btn-lg" value="Search Domain" />
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!--============== Contact us ==============-->
 
@@ -500,31 +477,25 @@
     <div class="col-md-6">
       <div class="row">
         <div class="col-sm-6">
-          <h4> Australia </h4>
+          <h4> Downtown Los Angeles </h4>
           <address>
-          <strong>Flat Host Pty Ltd</strong><br>
-          13/2 Elizabeth Street<br>
-          Melbourne VIC 30007<br>
-          Australia<br>
-          <abbr title="Phone">P:</abbr> +61 3 8376 6284<br>
+          1225 E 7th St<br>
+          Los Angeles, CA<br>
+          90002<br>
+          <abbr>Phone:</abbr> <a href="tel:213 490 9430">213 490 9430</a><br>
           <br>
           </address>
         </div>
         <div class="col-sm-6">
-          <h4>India</h4>
-          <address>
-          <strong>Flat Host Pty Ltd</strong><br>
-          MG Road<br>
-          Pulleppady Jn<br>
-          Kochi, India<br>
-          <abbr title="Phone">P:</abbr>+91 9 8376 6280<br>
-          <br>
-          </address>
+          <h4> Hours of Operation</h4>
+          <p>
+          Monday thru Satuday 7AM - 5PM<br>
+          Closed on Sundays &amp; Major Holidays</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 mapwrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3151.835837652496!2d144.955431!3d-37.817313999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedc33f230d1355b1!2sEnvato+Pty+Ltd!5e0!3m2!1sen!2sin!4v1408780745585" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.25876127522!2d-118.243627584761!3d34.03723288060997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c62ff969038b%3A0x4720eaafb7b54734!2s1225+E+7th+St%2C+Los+Angeles%2C+CA+90021!5e0!3m2!1sen!2sus!4v1476492122684" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -534,7 +505,7 @@
           <input class="form-control" type="text" placeholder="Full Name" name="name" id="name">
         </div>
         <div class="form-group">
-          <input class="form-control" type="email" placeholder="Email ID" name="email" id="email">
+          <input class="form-control" type="email" placeholder="Email Address" name="email" id="email">
         </div>
         <div class="form-group">
           <input class="form-control" type="text" placeholder="Mobile Number" name="mobile" id="mobile">
@@ -557,33 +528,39 @@
 <div class="footer">
   <div class="container">
     <div class="row footerlinks">
-      <div class="col-sm-4 col-md-2">
+      <div class="col-md-2">
         <p>CALL US</p>
         <ul>
-          <li> +1 4528 254 247</li>
-          <li>+1 4002 188 355</li>
+          <li><a href="tel:213 490 9430">213 490 9430</a></li>
         </ul>
       </div>
-      <div class="col-sm-4 col-md-2">
+      <div class="col-md-2">
+        <p>HOURS OF OPERATION</p>
+        <ul>
+          <li>Monday thru Saturday 7AM - 5PM</li>
+          <li>Closed Sundays</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
         <p>FOLLOW US</p>
         <ul>
-          <li><a href="http://twitter.com/surjithctly" target="_blank">Follow on Twitter</a></li>
-          <li><a href="http://web3canvas.com" target="_blank">Like us on Facebook</a></li>
-          <li><a href="http://surjithctly.in" target="_blank">Join on Linkedin</a> </li>
+          <li><a href="http://facebook.com/dtlatire" target="_blank">Follow on Facebook</a></li>
+          <li><a href="http://instagram.com/dtlatire" target="_blank">Follow on Instagram</a></li>
+          <li><a href="http://yelp.com/dtlatire" target="_blank">Follow on Yelp</a> </li>
         </ul>
       </div>
+      <!--
       <div class="col-sm-4 col-md-2">
         <p>COMPANY</p>
         <ul>
           <li> <a href="#">About us</a></li>
-          <li><a href="#">Latest from Blog</a></li>
           <li><a href="#">Our Team</a></li>
         </ul>
       </div>
       <div class="col-sm-4 col-md-2">
         <p>EMAIL US</p>
         <ul>
-          <li><a href="mailto:support@mail.in" target="_blank">support@mail.com</a></li>
+          <li><a href="mailto:ronchung79@gmail.com" target="_blank">info@dtlatire.com</a></li>
           <li><a href="mailto:mail@mail.in" target="_blank">sales@mail.com</a></li>
         </ul>
       </div>
@@ -599,57 +576,29 @@
         <ul>
           <li> <a href="#" class="btn btn-success btn-small">CHAT WITH US </a> </li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <div class="row copyright">
-      <div class="pull-right"><img src="images/logo-footer.png" alt="logo"></div>
-      <p>Copyright &copy; 2013. Flathost Inc</p>
+      <div class="pull-right"><img src="images/dtla-logo.png" alt="logo" height="52" width="233"></div>
+      <p>Copyright &copy; 2016. DTLA Tire &amp; Wheel</p>
     </div>
   </div>
 </div>
 
-<!--==============MODAL LOGIN=================--> 
 
-<!-- Modal -->
-<div class="modal fade LoginSignup" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title">Login</h3>
-      </div>
-      <div class="modal-body">
-        <form method="post" action="https://www.yourwebsite.com/client/dologin.php">
-          <div class="form-group">
-            <input class="form-control input-lg" type="text" name="username" size="50" placeholder="Email ID"/>
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="password" name="password" size="20" placeholder="Password"/>
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Login to my Account" class="btn btn-success btn-lg"/>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- /.modal-content --> 
-  </div>
-  <!-- /.modal-dialog --> 
-</div>
-<!-- /.modal --> 
 
-<!--===Back to top======--> 
-<a href="#" class="scrollup">Scroll</a> 
+<!--===Back to top======-->
+<a href="#" class="scrollup">Scroll</a>
 
-<!--==============QUERY LIBRARY=================--> 
+<!--==============QUERY LIBRARY=================-->
 
-<script src="js/jquery.easing.1.2.js"></script> 
+<script src="js/jquery.easing.1.2.js"></script>
 
-<!--==============BOOTSTRAP JS=================--> 
+<!--==============BOOTSTRAP JS=================-->
 
-<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
 
-<!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============--> 
+<!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============-->
 
 <script>
             $(function() {
@@ -658,37 +607,37 @@
 				    var $anchor = $(this);
 					$('.nav  li').removeClass('active');
                     $anchor2.addClass('active');
-					
+
                     $('html, body').stop().animate({
                         scrollTop: $($anchor.attr('href')).offset().top - 80
                     }, 1500,'easeInOutExpo');
                     event.preventDefault();
                 });
             });
-        </script> 
+        </script>
 
-<!--=============ONE PAGE SCROLLING SCRIPTS ENDS============--> 
+<!--=============ONE PAGE SCROLLING SCRIPTS ENDS============-->
 
-<!--=============BACK TO TOP STARTS============--> 
+<!--=============BACK TO TOP STARTS============-->
 
 <script>
-    $(document).ready(function(){ 
- 
+    $(document).ready(function(){
+
         $(window).scroll(function(){
             if ($(this).scrollTop() > 800) {
                 $('.scrollup').fadeIn();
             } else {
                 $('.scrollup').fadeOut();
             }
-        }); 
- 
+        });
+
         $('.scrollup').click(function(){
             $("html, body").animate({ scrollTop: 0 }, 600);
             return false;
         });
- 
+
     });
-</script> 
+</script>
 
 <!--=============BACK TO TOP ENDS============-->
 
@@ -706,5 +655,19 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+<script type="text/javascript" src="js/instafeed.js"></script>
+<script type="text/javascript">
+(function(){
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '184954442',
+        clientId: '8ded627982554dcebb672a35c2030a76',
+        accessToken: '184954442.1677ed0.ab5f0d3b25ba4110bfa58272df0cfffe',
+        limit: 14,
+        sortBy: 'most-recent'
+    });
+    feed.run();
+})();
+</script>
 </body>
 </html>

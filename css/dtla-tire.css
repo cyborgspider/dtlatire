@@ -35,6 +35,9 @@ If you having trouble in editing css. please send a mail to support@surjithctly.
 
 /*==========0. GLOBAL STYLES==============*/
 
+/*  #0193d7 = brand blue
+		#dbd9d6 = brand silver
+*/
 
 body {
 	font-family:"Montserrat", Arial, Helvetica, sans-serif;
@@ -42,7 +45,7 @@ body {
 	position:relative;
 }
 a {
-	color:#2cc76a;
+	color:#0193d7;
 }
 a:hover, a:focus {
 	color:#1eb45a;
@@ -54,6 +57,16 @@ p {
 	color: #70747A;
 }
 /*==========1. HEADER==============*/
+
+.topheader {
+	background: #0193d7;
+	color: white;
+	text-align:center;
+}
+.topheader h2 em {
+	color: #dbd9d6;
+	font-style: normal;
+}
 
 .navbar-header {
 	min-height:80px;
@@ -73,9 +86,13 @@ p {
 	/*text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);*/
 	background:url(../images/header-bg.jpg) no-repeat #232a31; /* Old browsers */
-	height:630px;
+	height:530px;
 	background-size:cover;
 	overflow:hidden;
+	margin-bottom:0;
+}
+.flexslider {
+	margin: 0;
 }
 .navbar {
 	background:	#232a31;
@@ -101,7 +118,7 @@ p {
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
 	background:none;
-	color:#2cc76a;
+	color:#0193d7;
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
 	box-shadow:none;
@@ -116,31 +133,33 @@ p {
 	color: #FFF;
 	background-color: transparent;
 }
-.navbar-default + div {
+/*.navbar-default + div {
 	margin-top: 68px;
-}
+}*/
 .btn-lg {
 	font-size:18px;
 	padding:20px 50px;
 	margin:5px 10px;
 }
 .btn-success {
-	background-color: #2cc76a;
+	background-color: #0193d7;
 	background-image:none;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-	background-color: #22bb5f!important;
+	background-color: #035e82!important;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	color:#FFF!important;
 }
 .btn-primary {
-	background-color: #2db6d8;
+	background-color: #dbd9d6;
 	background-image:none;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #035e82;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-	background-color: #209ab8!important;
-	color:#FFF!important;
+	background-color: #a5a4a4!important;
+	color: #035e82;
 }
 .btn-danger {
 	background-color: #f45c57;
@@ -152,14 +171,13 @@ p {
 	color:#FFF!important;
 }
 .navbar .nav > .active > a.btn {
-	background-color: #22bb5f!important;
+	background-color: #035e82!important;
 	color:#FFF!important;
 }
 .hero-unit {
 	background:none;
 	text-align:center;
 	padding: 60px;
-	padding-top:130px;
 	margin-bottom: 30px;
 	font-size: 18px;
 	font-weight: 200;
@@ -169,6 +187,7 @@ p {
 .hero-unit h1 {
 	padding-bottom:15px;
 	font-weight:bold;
+	text-shadow: 0 1px 3px #333;
 }
 .hero-unit h3 {
 	font-weight:normal;
@@ -179,7 +198,6 @@ p {
 .slide2 {
 	background:none;
 	text-align:center;
-	padding-top:90px;
 }
 .slide2 h1 {
 	font-size:50px;
@@ -188,14 +206,14 @@ p {
 .slide3 {
 	background:none;
 	text-align:left;
-	padding-top:100px;
+	padding-top:50px;
 }
 .slide3 h1 {
 	font-size:50px;
 	padding-top:90px;
 	font-weight:bold;
 }
-.slide3 h3 {
+.slide3 h3, .slide2 h3{
 	font-size:20px;
 	padding-right:20px;
 	color: #D5D5D5;
@@ -216,6 +234,25 @@ p {
 }
 .img-thumbnail h4, .img-thumbnail p {
 	text-align:center;
+}
+
+/* INSTAGRAM */
+.instagram-gallery {
+	background: #dbd9d6;
+	padding: 30px 0 40px;
+	text-align: center;
+}
+.instagram-gallery h1{
+	margin-top: 0;
+}
+.instagram-gallery h3{
+	color: #0193d7;
+	margin-top: 10px;
+}
+#instafeed > a {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 /*==========3. MORE FEATURES==============*/
 
@@ -284,9 +321,22 @@ p {
 	font-weight: bold;
 	margin: 18px 0;
 }
+.brands {
+	background: #0193d7;
+}
+.brands h3 {
+	color: white;
+	margin-top:10px;
+	margin-bottom:30px;
+}
 .PartnersList {
 	text-align:center;
 	margin-top: 30px;
+}
+.PartnersList img{
+	margin-right:10px;
+	margin-bottom:10px;
+	display:inline-block;
 }
 /* Animation */
 
@@ -336,7 +386,7 @@ p {
 	text-align:center;
 }
 .PlanPricing .price {
-	background:#2cc76a;
+	background:#0193d7;
 	padding:5px;
 	color:#FFF;
 	font-size:42px;
@@ -421,7 +471,7 @@ p {
 }
 .ComparePlans .planHead2 {
 	height:60px;
-	background:#2cc76a;
+	background:#0193d7;
 }
 .ComparePlans .planHead3 {
 	height:60px;
@@ -437,8 +487,8 @@ p {
 	line-height: 1.8;
 }
 .ComparePlans .pricing1 .planFeatures {
-	border-right:solid 1px #2cc76a;
-	border-left:solid 1px #2cc76a;
+	border-right:solid 1px #0193d7;
+	border-left:solid 1px #0193d7;
 }
 .ComparePlans .pricing2 .planFeatures {
 	border-right:solid 1px #f45c57;
@@ -670,9 +720,7 @@ box-shadow: none;
  .navbar-collapse .nav > li > a:hover, .navbar-collapse .nav > li > a:focus, .navbar-collapse .dropdown-menu a:hover, .navbar-collapse .dropdown-menu a:focus {
  background:transparent;
 }
- .slide2, .slide3 {
-padding-top: 150px;
-}
+
  .slide3 h1, .slide2 h1 {
  font-size:34px;
 }
@@ -775,5 +823,5 @@ margin-bottom: -20px;
 /*Image fix for IE*/
 
 .img-responsive {
-	width:auto \9;	
+	width:auto \9;
 }
