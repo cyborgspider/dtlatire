@@ -62,10 +62,20 @@ p {
 	background: #0193d7;
 	color: white;
 	text-align:center;
+	margin-top:80px;
+}
+.topheader h2{
+	margin:15px 0;
+	font-size: 18px;
 }
 .topheader h2 em {
 	color: #dbd9d6;
 	font-style: normal;
+}
+@media (min-width:767px){
+	.topheader h2{
+		font-size:30px;
+	}
 }
 
 .navbar-header {
@@ -329,15 +339,15 @@ p {
 	margin-top:10px;
 	margin-bottom:30px;
 }
+.brands-carousel img{
+	padding:0 10px;
+	min-height: 100px;
+}
 .PartnersList {
 	text-align:center;
 	margin-top: 30px;
 }
-.PartnersList img{
-	margin-right:10px;
-	margin-bottom:10px;
-	display:inline-block;
-}
+
 /* Animation */
 
 .Testimonials .tm-data {
@@ -735,7 +745,7 @@ box-shadow: none;
  @media (max-width: 767px) {
 .jumbotron {
 padding: 20px 20px;
-margin-top: -20px;
+/*margin-top: -20px;*/
 height:auto;
 }
 .hero-unit {

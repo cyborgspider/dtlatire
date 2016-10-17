@@ -22,16 +22,19 @@
 
 <script src="js/modernizr.js"></script>
 
-<!--===================FLEX SLIDER=======================-->
+<!--===================FLEX SLIDER & CAROUSEL=======================-->
 
 <link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript">
   $(window).load(function() {
      $('.flexslider').flexslider({
         animation: "slide",
-		    useCSS: Modernizr.touch
+		    useCSS: Modernizr.touch,
+        controlNav:false
       });
   });
 </script>
@@ -59,6 +62,13 @@
         <li><a href="#about-us">ABOUT US</a></li>
         <li><a href="#brands">BRANDS</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SOCIAL <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://facebook.com/dtlatire" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com/dtlatire" target="_blank">Instagram</a></li>
+            <li><a href="https://www.yelp.com/biz/7th-exotic-wheels-los-angeles-4" target="_blank">Yelp</a></li>
+          </ul>
+        </li>
       </ul>
       </li>
       </ul>
@@ -243,18 +253,20 @@
     <div class="row PartnersList">
       <h1>Brands We Carry</h1>
       <h3>Just a sample of the quality brands we provide.</h3>
-      <img src="images/brands/2crave.png" alt="logo">
-      <img src="images/brands/bigbang.png" alt="logo">
-      <img src="images/brands/blaquediamond.png" alt="logo">
-      <img src="images/brands/diablo.png" alt="logo">
-      <img src="images/brands/dub.png" alt="logo">
-      <img src="images/brands/fuel.png" alt="logo">
-      <img src="images/brands/gianelle.png" alt="logo">
-      <img src="images/brands/heavyhitters.png" alt="logo">
-      <img src="images/brands/kokokuture.png" alt="logo">
-      <img src="images/brands/kokosolid.png" alt="logo">
-      <img src="images/brands/niche.png" alt="logo">
-      <img src="images/brands/sporza.png" alt="logo">
+      <div class="brands-carousel">
+        <img src="images/brands/2crave.png" alt="logo">
+        <img src="images/brands/bigbang.png" alt="logo">
+        <img src="images/brands/blaquediamond.png" alt="logo">
+        <img src="images/brands/diablo.png" alt="logo">
+        <img src="images/brands/dub.png" alt="logo">
+        <img src="images/brands/fuel.png" alt="logo">
+        <img src="images/brands/gianelle.png" alt="logo">
+        <img src="images/brands/heavyhitters.png" alt="logo">
+        <img src="images/brands/kokokuture.png" alt="logo">
+        <img src="images/brands/kokosolid.png" alt="logo">
+        <img src="images/brands/niche.png" alt="logo">
+        <img src="images/brands/sporza.png" alt="logo">
+      </div>
     </div>
   </div>
 </div>
@@ -544,9 +556,9 @@
       <div class="col-md-2">
         <p>FOLLOW US</p>
         <ul>
-          <li><a href="http://facebook.com/dtlatire" target="_blank">Follow on Facebook</a></li>
-          <li><a href="http://instagram.com/dtlatire" target="_blank">Follow on Instagram</a></li>
-          <li><a href="http://yelp.com/dtlatire" target="_blank">Follow on Yelp</a> </li>
+          <li><a href="https://facebook.com/dtlatire" target="_blank">Follow on Facebook</a></li>
+          <li><a href="https://instagram.com/dtlatire" target="_blank">Follow on Instagram</a></li>
+          <li><a href="https://www.yelp.com/biz/7th-exotic-wheels-los-angeles-4" target="_blank">Follow on Yelp</a></li>
         </ul>
       </div>
       <!--
@@ -668,6 +680,36 @@ s0.parentNode.insertBefore(s1,s0);
     });
     feed.run();
 })();
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.brands-carousel').slick({
+    autoplay:true,
+    arrows:false,
+    mobileFirst:true,
+    slidesToShow:4,
+    slidesToScroll:4,
+    pauseOnFocus:false,
+    pauseOnHover:false,
+    responsive:[
+      {
+        breakpoint:1023,
+        settings:{
+          slidesToShow:6,
+          slidesToScroll:6
+        }
+      },
+      {
+        breakpoint:767,
+        settings:{
+          slidesToShow:5,
+          slidesToScroll:5
+        }
+      }
+    ]
+  })
+})
 </script>
 </body>
 </html>
